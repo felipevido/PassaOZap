@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGORA É COM VOCÊ JÚLIA</title>
+</head>
+<body>
+    <style>
+        .meButtons{
+           
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            }
+            .youButtons {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            }
+            .yourChoice {
+                display: flex;
+                justify-content: center;
+            }
+    </style>
+
+    <div class="yourChoice">
+    <h1>VOCÊ QUE DECIDE...</h1>
+    </div>
+
+    <div style="margin-top: 10%;" class="youButtons button">
+        <button>
+            <a style="font-size: 4em; margin: 20px;" target="_blank" href="https://api.whatsapp.com/send?phone=55014998854798&text=Oi!%20">VOCÊ ME CHAMA</a>
+        </button>
+    </div>
+    
+    <div style="margin-top: 1%;" class="meButtons">
+        
+        <button onmouseover="moveButton(this)">
+            <a style="font-size: 4em; margin: 20px;" href="">EU TE CHAMO</a>
+        </button>
+    </div>
+    <script>
+        function moveButton(x) {
+            marginX = Math.floor(Math.random()*600)
+            marginY = Math.floor(Math.random()*500)
+    
+            x.style.margin = marginY.toString() + 'px ' + marginX.toString() + 'px'
+        }
+    </script>
+</body>
+</html>
